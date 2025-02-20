@@ -7,9 +7,10 @@
     <script>
         async function checkBalance() {
             let userId = document.getElementById("userId").value;
-            let response = await fetch("https://你的GitHub帳號.github.io/balance-check/balance.json");
+            https://Eddy980814.github.io/balance-check/balance.json
+            let response = await fetch("https://Eddy980814.github.io/balance-check/balance.json");
             let data = await response.json();
-            let balance = data[userId] || "查無資料";
+            let balance = data[userId] || "查無資料";  // 如果查不到會顯示"查無資料"
             document.getElementById("result").innerText = "你的餘額：" + balance;
         }
     </script>
